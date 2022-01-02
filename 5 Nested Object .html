@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       //  This is nested object :- Object inside the object
+         let book= {
+            name:"Advance JS",
+            page: 200,
+            price: 150,
+ 
+            publication:{
+                pub_name:"techgun",
+
+                year:2021
+            }
+        
+        };
+
+        let{name :title,page,price,publication:{pub_name: pub, year}}= book;
+        console.log(pub);  // Here change the name so changes also variable
+   </script> 
+</body>
+</html>
